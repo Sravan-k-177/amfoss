@@ -1,0 +1,87 @@
+body{
+    background-image: url("amongusbackground.jpg");
+    background-size: cover;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 100px 100px  100px;
+    grid-template-rows: 100px 100px  100px;
+    position: relative;
+    top: 14rem;
+    left:45rem;
+    color:rgb(54, 7, 104);
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.item{
+    background-color: rgb(207, 43, 43);
+    text-align: center;
+    color:rgb(54, 7, 104);
+    font-weight: 100;
+    font-size: 72px;
+    /* margin-bottom: 2px; */
+
+}
+
+.containerlevel{
+    position: relative;
+    top:1rem;
+    left:10rem;
+    font-size: 30px;
+}
+
+
+.difficultyDown{
+    background-color:black;
+    color:aqua;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.difficultyUp{
+    background-color:transparent;
+    color:aqua;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.startButton{
+    position: relative;
+    top: 100px;
+    left: 15rem;
+    font-size: 40px;
+    color:white;
+    background-color: black;
+    border-color: yellow;
+}
+
+#targetSequence{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:white;
+    position: relative;
+    left: 45rem;
+    top:12rem;
+}
+
+.roundCount{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    position: relative;
+    left: 46rem;
+    top: 13rem;
+}
+
+.roundbuttons{
+    background-color:white;
+    border-radius: 50%;
+    color: black;
+    font-size: 2rem;
+}
+/* .roundCountText{
+    color: white;
+    font-size: bold;
+    font-size: 30px;
+} */

@@ -1,0 +1,38 @@
+body{
+    background-color: rgba(0, 0, 0, 0.945);
+}
+
+
+img{
+    margin-top: 1%;
+    width: 140px;
+    margin-left: 10%;
+}
+
+button{
+    margin-left: 2%;
+    font-weight: 2px bold;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    border:none;
+    padding: 8px;
+    font-family: courier new;
+}
+
+p{
+    font-size: 72px;
+    font-family:'Courier New', Courier, monospace;
+    color: #D0A730;
+    margin-top: 15%;
+    padding-left: 10%;
+}
+
+button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image1{
+    size: 10px;
+}

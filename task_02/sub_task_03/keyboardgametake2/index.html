@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>keyboard game</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<h1 id="highScoreText" style="color: white;">High Score: </h1>
+<!-- <h1 id="targetSequence">target sequence: </h1> -->
+<div class ="roundCount">
+  <!-- <p3 class="roundCountText">round:</p3> -->
+  <button id="roundbutton1" class = "roundbuttons" disabled="true" style="background-color:rgb(55, 55, 55)"></button>
+  <button id="roundbutton2" class = "roundbuttons" disabled="true">0</button>
+  <button id="roundbutton3" class = "roundbuttons" disabled="true">0</button>
+  <button id="roundbutton4" class = "roundbuttons" disabled="true">0</button>
+  <button id="roundbutton5" class = "roundbuttons" disabled="true" style="background-color:rgb(55, 55, 55)"></button>
+</div>
+<div class="container">
+    <button id="button1" class="item" disabled="true">Q</button>
+    <button id="button2" class="item" disabled="true">W</button>
+    <button id="button3" class="item" disabled="true">E</button>
+    <button id="button4" class="item" disabled="true">R</button>
+    <button id="button5" class="item" disabled="true">T</button>
+    <button id="button6" class="item" disabled="true">Y</button>
+    <button id="button7" class="item" disabled="true">U</button>
+    <button id="button8" class="item" disabled="true">I</button>
+    <button id="button9" class="item" disabled="true">O</button>
+</div>
+<div class="containerlevel">
+    <button class="difficultyDown" onclick="difficultyRed()">&lt;</button>
+    <p1 id="difficultyMessage1" style="color:white;">Difficulty:</p1>
+    <p2 id ="textDifficulty" style="color:white">1</p2>
+    <p3 id="difficultyMessage2" style="color:white;">/ 3</p3>
+    <button class ="difficultyUp" onclick="difficultyInc()">&gt;</button>
+</div>
+<button class="startButton" onclick="startGame()">START</button>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>

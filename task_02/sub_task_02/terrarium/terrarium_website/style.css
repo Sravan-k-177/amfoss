@@ -1,0 +1,116 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	
+}
+
+h1 {
+	color: #000000;
+	text-align: center;
+    font-weight: bold;
+}
+#left-container {
+	background-color: #eee;
+	width: 15%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+#right-container {
+	background-color: #eee;
+	width: 15%;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+
+.jar-walls {
+	height: 80%;
+	width: 60%;
+	/* background: #d1e1df; */
+	background-color: rgb(7, 175, 7);
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0.5%;
+	left: 20%;
+	opacity: 0.5;
+	z-index: 1;
+	cursor: not-allowed;
+}
+
+.jar-top {
+	width: 50%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 80.5%;
+	left: 25%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.jar-bottom {
+	width: 50%;
+	height: 1%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7;
+}
+
+.dirt {
+	width: 60%;
+	height: 5%;
+	background: #3a241d;
+	position: absolute;
+	border-radius: 0 0 1rem 1rem;
+	bottom: 1%;
+	left: 20%;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.jar-glossy-short{
+	width: 2%;
+	height: 5%;
+    background-color: rgb(255, 255, 255);
+	position: absolute;
+    border-radius: 50px;
+	bottom: 42%;
+	left: 4%;
+	z-index: 1;
+}
+
+.jar-glossy-long{
+	width: 2%;
+	height: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+	position: absolute;
+	bottom: 20%;
+	left: 4%;
+	z-index: 1;
+}
+
+h1{
+	font-weight: bold ;
+	font-size: 90px;
+	margin-top: 0px;
+}

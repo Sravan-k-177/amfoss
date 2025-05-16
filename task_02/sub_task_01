@@ -1,0 +1,106 @@
+sub_sub_task_01:
+Data Types one would need to build a shopping cart:
+
+Numbers --> for the number of items in cart
+	    for the quantity of  each item in cart
+	    for the price of each product
+
+Strings --> to display the name of the item in the cart
+
+Boolean --> to check which items are selected for purchase
+	    to check weather the minimum order quantity/amount has been fulfilled
+
+Date --> to display the estimated delivery date
+
+--------------------------------------------------------------------------------
+
+sub_sub_task_02:
+
+function displayGreeting(name, pronoun= "Mr.") {
+
+    console.log(`Good morning, ${pronoun} ${name}!`);
+  }
+displayGreeting('Sravan');
+displayGreeting('sravan lol', good ='Mrs.');
+
+
+
+let num_1 = 25;
+let num_2 = 30;
+let operator = '+';
+let result;
+
+function arthematicSolve(number_1, number_2, operator){
+  switch(operator){
+    case "+":
+      result = number_1+number_2; 
+      break;
+    case "-":
+      result = number_1-number_2; 
+      break;
+    case "x":
+      result = number_1*number_2; 
+      break;
+    case "/":
+      result = number_1/number_2; 
+      break;
+  }
+  return result;
+}
+console.log(arthematicSolve(num_1,num_2,operator));
+
+
+----------------------------------------------------------------------------
+
+sub_task-03:
+
+let allStudents = ['A','B-',1,4,5,2];
+let studentsWhoPass = [];
+let j;
+
+function gradingSystem(allGrades){
+  for (let i=0; i<allStudents.length; i++){
+    j = allStudents[i];
+    if (typeof j === 'number'){
+      if (j>=3){
+        studentsWhoPass.push(j);
+      }
+    }
+    else{
+      switch(j){
+        case "A":
+          studentsWhoPass.push(j);
+          break;
+        case "A-":
+          studentsWhoPass.push(j);
+          break;
+        case "B":
+          studentsWhoPass.push(j);
+          break;
+        case "B-":
+          studentsWhoPass.push(j);
+          break;
+        case "C":
+          studentsWhoPass.push(j);
+          break;
+      }
+    }
+  }
+}
+gradingSystem(allStudents);
+console.log(studentsWhoPass);
+
+
+-----------------------------------------------------------------------------
+
+sub_task-04:
+
+
+let listNumbers = [];
+function everyThirdNumber(){
+  for(let i =1; i<21; i+=3){
+    listNumbers.push(i);
+  }
+}
+everyThirdNumber();
+console.log(listNumbers);

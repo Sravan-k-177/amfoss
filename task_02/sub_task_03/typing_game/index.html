@@ -1,0 +1,25 @@
+<!-- inside index.html -->
+<html>
+<head>
+  <title>Typing game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Typing game!</h1>
+  <p id="intro">Practice your typing skills with a quote from Sherlock Holmes.</p>
+  <p id = "intro2">Click *Start* to begin!</p>
+  <p id="quote"></p> <!-- This will display our quote -->
+  <p id="message"></p> <!-- This will display any status messages -->\
+  <p id="message2"></p>
+  <div>
+    <input type="text" aria-label="current word" id="typed-value" disabled=true /> <!-- The textbox for typing -->
+    <button type="button" id="start">Start</button> <!-- To start the game -->
+  </div>
+  <dialog>
+    <button autofocus>Close</button>
+    <h2 id="finaloutput">This modal dialog has a groovy backdrop!</h2>
+  </dialog>
+  <!-- <button>Show the dialog</button> -->
+  <script src="script.js"></script>
+</body>
+</html>
