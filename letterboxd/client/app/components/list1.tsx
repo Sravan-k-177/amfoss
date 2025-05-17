@@ -28,7 +28,7 @@ export default function List1({selectedCategory}:List1Props) {
           fetchUrl = 'http://localhost:8081/api/homepage/movies';
       }
 
-    fetch("http://localhost:8081/api/homepage/movies")
+    fetch(fetchUrl)
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
