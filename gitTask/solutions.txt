@@ -1,0 +1,56 @@
+commit-one-file:
+using git verify does the job
+
+commit-one-file-staged:
+one file is already staged so have to reset it, stage the other file and commit
+
+ignore-them:
+made a .gitigonre file using touch
+ignore files with some extension by using *.<filetype>
+ignore folders using <directoryname>/
+
+chase-branch:
+since you want them to point to same commit, from chase branch i used git merge escaped
+
+merge-conflict:
+use git merge to find out which file has the merge conflict
+open the equation.txt using nano, change the information in the file
+stage the file and push it
+
+save-your-work:
+i used git stash as mentioned in the task,
+opened the bugg.txt and removed a line of text
+used git stash pop
+opened bug.txt using nano and added "Finally, finished it" to the end of the file
+git commit and git verify
+
+change-branch-history:
+since the required reversion of commit is to "hot-bugfix"
+i used git rebase hot-bugfix
+
+
+remove-ignored:
+i used git rm ignored.txt which prevents the file to be able to get staged,
+then git commit and git verify
+
+Case-sensitive-filename:
+git mv File.txt file.txt
+this changes the name of the file and it also routes the git pointer to the new name
+git commit
+git verify
+
+fix-typo:
+nano file.txt and fix typo
+use git commit --amend to open the commit message and correct it too
+git verify
+
+forge-date:
+git commit --amend --no-edit --date="Fri Mar 9 08:30:24 1987 +0100"
+it forges the date to 1987
+git verify
+
+commit-lost:
+using reflog, you can see that the second last commit says "very important work"
+so go there by using: git reset --hard c7ba411
+
+
