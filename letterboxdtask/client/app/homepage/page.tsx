@@ -14,6 +14,7 @@ export default function HomePage() {
             <img className='w-30' src="./favicon.ico" alt="" />
             <SearchBar />
             <button onClick={()=> router.push("/wishlisttesting")} className='text-black p-5 rounded-2xl  hover:bg-blue-500 bg-[#F5C518]'>Wishlist</button>
+            <button onClick={()=> router.push("/loginpage")}  className='text-black p-5  rounded-2xl  hover:bg-blue-500 bg-[#F5C518]'>Login</button>
             </div>
         </header>
         <div>

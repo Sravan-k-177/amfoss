@@ -1,96 +1,3 @@
-// 'use client';
-// import {useRouter} from "next/navigation";
-
-// export default function SignUp() {
-//   const router = useRouter();
-//   return (
-//     <div style={{ minHeight:'100vh',backgroundColor: '#F5C518', padding: '10px' }}>
-//                 <header onClick={()=> router.push("/homepage")} className="text-white p-2 text-left " style={{
-//                   fontSize: '34px',
-//                   fontWeight: 'bold',
-//                   cursor: 'pointer',
-//                   borderRadius: '10px',
-//                   backgroundColor: 'black',
-//                   display: 'inline-block',
-//           }}>←</header>
-//       <div style={{ paddingLeft:"30%", width: "70%"}}>
-//         <h1 style={{ textAlign: 'center', fontSize: '42px', color: 'black' }}>
-//           RANt n’ Review
-//         </h1>
-
-//         <form>
-//           <div style={{ marginBottom: '15px' }}>
-//             <label style={{ display: 'block', marginBottom: '5px', color: '#000' }}>
-//               Email
-//             </label>
-//             <input
-//               type="text"
-//               placeholder="example.mail@email.com"
-//               style={{color:"black", backgroundColor:"white", width: '100%', padding: '10px', borderRadius: '5px' }}
-//             />
-//           </div>
-
-//           <div style={{ marginBottom: '15px' }}>
-//             <label style={{ display: 'block', marginBottom: '5px', color: '#000' }}>
-//               Username
-//             </label>
-//             <input
-//               type="text"
-//               placeholder="example1234user@31"
-//               style={{ color:"black", backgroundColor:"white",width: '100%', padding: '10px', borderRadius: '5px' }}
-//             />
-//           </div>
-
-
-//           <div style={{ marginBottom: '15px' }}>
-//             <label style={{ display: 'block', marginBottom: '5px', color: '#000' }}>
-//               Password
-//             </label>
-//             <input
-//               placeholder="Enter Password"
-//               style={{ color:"black", backgroundColor:"white", width: '100%', padding: '10px', borderRadius: '5px' }}
-//             />
-//             <div style={{ textAlign: 'right', fontSize: '12px', marginTop: '5px' , color:'black'}}>
-//               <p>error message for password</p>
-//             </div>
-
-
-//             <label style={{ display: 'block', marginBottom: '5px', color: '#000' }}>
-//               Re-enter Password
-//             </label>
-//             <input
-//               placeholder="Re-enter Password"
-//               style={{ color:"black", backgroundColor:"white", width: '100%', padding: '10px', borderRadius: '5px' }}
-//             />
-
-//           </div>
-
-//           <button
-//             style={{
-//               width: '100%',
-//               backgroundColor: 'blue',
-//               color: 'white',
-//               padding: '10px',
-//               border: 'none',
-//               borderRadius: '5px',
-//               marginBottom: '10px'
-//             }}
-//           >
-//             SignUp
-//           </button>
-
-//           <div style={{ textAlign: 'center', marginTop: '10px' }}>
-//           <hr style={{ border: 'none', height: '2px', backgroundColor: 'black', width: '100%', margin: '20px auto' }} />
-//           <p className="text-gray-600">Already have an account?</p>
-//             <button onClick={(e)=> {e.preventDefault(); router.push("./loginpage");}} className="bg-blue-500 text-white p-2 rounded-md" style={{width:"100%"}}>Login</button>
-//           </div>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
-
-
 'use client';
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -119,7 +26,8 @@ export default function SignUp() {
       setMessage(result.message);
 
       if (response.status === 201) {
-        router.push("/homepage");
+        router.push("/loginpage");
+        localStorage.setItem("user_id", result.user_id);
       }
     } catch (error) {
       setMessage("Error submitting form");

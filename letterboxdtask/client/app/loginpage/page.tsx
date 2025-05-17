@@ -28,6 +28,7 @@ export default function Login() {
 
       if (response.status === 200) {
         router.push("/homepage");
+        localStorage.setItem("user_id", result.user_id);
       }
     } catch (error) {
       setMessage("Error submitting form");
