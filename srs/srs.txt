@@ -1,26 +1,71 @@
 Software Requirements Specification (SRS)
 
-Introduction:
-This project is about building a platform where users can add, review and organize tasks, similar to letterboxd website.
+1.INTRODUCTION:
 
-Features:
+1.1 PURPOSE:
+The purpose of this document is to build an online movie/tvshow reviewpage, where users can RAN't and Review all they want, unfiltered.
+This lets other people get an overview of what the movie/tv show is like.
 
-User Accounts 	- Sign In and Sign Up
-Search 		- To find movies/tv shows/ anime by title
-Review System   - Leave review, or delete review
-Wishlist 	- Have personalised wishlist
+1.2 PROJECT SCOPE:
+Users will be able to RANt n' Review movies and tvshows.
+This website showcases users the New and Trending movies so they can know about the latest movies, and the genres in movies helps them choose which to watch.
+It helps people get an overview of what a movie/tv show is like and it would make them choose what to binge watch in their free time.
+Follow other Users and see their watchlists, which also socialises people with similar interests.
+
+
+
+2.OVERALL DESCRIPTION:
+
+2.1 PRODUCT PERSPECTIVE:
+The website will contain these types of information:
+Movie Information: Includes Movie Title, Release Year, Genre, Description, etc.
+User Information: Stores UserId, email, password and a collection of watchlist movies.
+Reviews and Rating: User-Submitted reviews for movie/tvshows and rating
+
+
+2.2 PRODUCT FEATURES:
+
+User Accounts 	- Create and manage user accounts, with login functionality
+Search 		- To find movies/tv shows by title
+Movie Discovery - Displays Trending movies and New Releases
+Wishlist 	- Have personalised wishlist mapped to UserId
 User Interface  - Responsive and easy to use
 
 
-Functional Requirements:
-User Accounts: Users can create and log in to an account.
-Search: Quick search for movies/TV shows by title.
-Reviews:Users can leave and modify reviews and ratings.
-Wishlist: Users can add/remove items from their wishlist.
-Easy to use - The interface need to be friendly to use
+2.3 USER CLASS and CHARACTERISTICS:
+Guest User : Can get to know about the New Releases and trending movies
+Registered Users: Can rate, review, and create watchlists
 
-Frontend:
-Made using Next
 
-Backend:
-Made using Flask and mysql database
+3.SYSTEM FEATURES:
+
+3.1 USER REGISTRATION:
+Users can register with email and password
+
+3.2 SEARCH:
+Search for movies/TV shows by name
+
+3.3 MOVIE DISCOVERY:
+Displays new releases and trending movies/TV shows
+
+3.4 REVIEWS and RATINGS:
+Users can submit and view reviews 
+Reviews can be deleted
+
+3.5 WATCHLIST:
+Users can add/remove movies/TV shows to their personalized watchlist.
+
+
+4. EXTERNAL INTERFACES:
+
+4.1 USER INTERFACE:
+Simple, responsive design
+
+4.2 API INTEGRATION:
+Api integration to get data from Databases like TMDB for movie data.
+
+
+5. DATA REQUIREMENTS
+User Data: ID, email, password, followed users, watchlist.
+Movie Data: Title, genre, release year, description, ratings.
+Reviews: Text, ratings, submission date.
