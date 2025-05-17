@@ -1,0 +1,26 @@
+Software Requirements Specification (SRS)
+
+Introduction:
+This project is about building a platform where users can add, review and organize tasks, similar to letterboxd website.
+
+Features:
+
+User Accounts 	- Sign In and Sign Up
+Search 		- To find movies/tv shows/ anime by title
+Review System   - Leave review, or delete review
+Wishlist 	- Have personalised wishlist
+User Interface  - Responsive and easy to use
+
+
+Functional Requirements:
+User Accounts: Users can create and log in to an account.
+Search: Quick search for movies/TV shows by title.
+Reviews:Users can leave and modify reviews and ratings.
+Wishlist: Users can add/remove items from their wishlist.
+Easy to use - The interface need to be friendly to use
+
+Frontend:
+Made using Next
+
+Backend:
+Made using Flask and mysql database
